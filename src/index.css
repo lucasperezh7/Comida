@@ -1,0 +1,152 @@
+
+
+
+body {
+  font-family: 'Merriweather', serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Roboto Slab', serif;
+}
+ 
+
+
+
+.title-with-letter-spacing {
+  letter-spacing: 0.2em; /* Ajusta el valor según tus preferencias */
+}
+
+.hover-title {
+  font-size: 2rem;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expanded {
+  transform: scale(1.2);
+}
+
+
+.hovered {
+  font-size: 3rem;
+  padding: 30px;
+}
+
+
+.card {
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.front {
+  background-color: #f2f2f2;
+}
+
+.back {
+  background-color: #e0e0e0;
+  transform: rotateY(180deg);
+}
+
+.flipped .card-content.front {
+  transform: rotateY(180deg);
+}
+
+.flipped .card-content.back {
+  transform: rotateY(0deg);
+}
+
+
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.sticky-header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.sticky-header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.sticky-header nav ul li {
+  margin: 0 15px;
+  cursor: pointer;
+}
+.card {
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back {
+  background-color: #ffc107;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+

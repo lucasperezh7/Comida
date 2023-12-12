@@ -1,0 +1,138 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
+.scrolled {
+  background-color: rgb(19, 163, 163); /* Cambia a tu color de fondo cuando haces scroll */
+  transition: background-color 0.8s ease; /* Transición suave */
+}
+
+ul.flex li a {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* Estilos para los enlaces cuando se ha hecho scroll */
+.scrolled ul.flex li a {
+  color: #825a0b79;
+  font-weight: bold;
+  font-size: large;
+}
+
+.containers {
+  display: flex;
+  height: 125vh; /* Establece la altura del contenedor principal al 100% de la altura de la ventana */
+}
+
+.container {
+  flex: 1; /* Cada contenedor ocupa la misma cantidad de espacio disponible */
+  padding: px; /* Ajusta el relleno según tus preferencias */
+  
+}
+
+#container1 {
+  background-color:#825a0b79;
+}
+
+#elemento1 {
+  width: 95vh;
+  height: 50vh;
+  margin-left: 8vh;
+  margin-top: 8vh;
+  border-radius: 1cm;
+}
+#imagen1 {
+  margin-top:5px;
+  width: 200vh;
+  height: 44vh;
+}
+#elemento2 {
+  width: 95vh;
+  height: 50vh;
+  margin-left: 8vh;
+  margin-top: 8vh;
+  border-radius: 1cm;
+}
+#imagen2 {
+  margin-top:5px;
+  width: 200vh;
+  height: 44vh;
+}
+#elemento3 {
+  width: 95vh;
+  height: 50vh;
+  margin-left: 8vh;
+  margin-top: 8vh;
+  border-radius: 1cm;
+}
+  #imagen3 {
+    margin-top:5px;
+    width: 200vh;
+    height: 44vh;
+  }
+
+  #elemento4 {
+    width: 95vh;
+    height: 50vh;
+    margin-left: 8vh;
+    margin-top: 8vh;
+    border-radius: 1cm;
+  }
+    #imagen4 {
+      margin-top:5px;
+      width: 200vh;
+      height: 44vh;
+    }
+  
+#container2 {
+  background-color: #b29465; /* Color de fondo del segundo contenedor */
+}
+
+
+
+
+
+
+
+
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+/* Estilo para el menú desplegable */
+.nav-links.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #333;
+  width: 100%;
+  top: 60px; /* Ajusta según la altura de tu navbar */
+  left: 0;
+  z-index: 1;
+}
+
+.nav-links.open a {
+  border-bottom: 1px solid #555;
+}
+
+/* Otros estilos para el diseño responsivo, etc. */
+
+
