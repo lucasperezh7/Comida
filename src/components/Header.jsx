@@ -36,34 +36,19 @@ const Header = () => {
         </Link>
       </div>
       <div className="flex space-x-28 ml-2 font-semibold text-lg">
-        <Link
-          to="/ruta1"
-          className={scrolled ? "text-slate-800" : "text-white"}
-        >
+        <Link to="/" className={scrolled ? "text-slate-800" : "text-white"}>
           Enlace 1
         </Link>
-        <Link
-          to="/ruta2"
-          className={scrolled ? "text-slate-800" : "text-white"}
-        >
+        <Link to="/" className={scrolled ? "text-slate-800" : "text-white"}>
           Enlace 2
         </Link>
-        <Link
-          to="/ruta3"
-          className={scrolled ? "text-slate-800" : "text-white"}
-        >
+        <Link to="/" className={scrolled ? "text-slate-800" : "text-white"}>
           Enlace 3
         </Link>
-        <Link
-          to="/ruta4"
-          className={scrolled ? "text-slate-800" : "text-white"}
-        >
+        <Link to="/" className={scrolled ? "text-slate-800" : "text-white"}>
           Enlace 4
         </Link>
-        <Link
-          to="/ruta5"
-          className={scrolled ? "text-slate-800" : "text-white"}
-        >
+        <Link to="/" className={scrolled ? "text-slate-800" : "text-white"}>
           Enlace 5
         </Link>
       </div>
