@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Imagen1 from "../../images/5.jpeg";
 import Imagen2 from "../../images/6.jpeg";
 import Imagen3 from "../../images/7.jpeg";
-import Siguiente from "../../assets/Siguiente.svg";
-import Anterior from "../../assets/Anterior.svg";
+import Siguiente from "../../images/Siguiente.png";
+import Anterior from "../../images/Anterior.png";
 const Seccion = () => {
   const images = [Imagen1, Imagen2, Imagen3];
 
@@ -20,7 +20,7 @@ const Seccion = () => {
   };
 
   return (
-    <div className="image-slider flex relative">
+    <div className="image-slider flex relative pt-28 pb-28">
       <img
         className="rounded-md mx-auto" // Agregado mx-auto para centrar horizontalmente
         src={images[currentImage]}
