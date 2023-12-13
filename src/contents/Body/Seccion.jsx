@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Imagen1 from "../../images/5.jpeg";
 import Imagen2 from "../../images/6.jpeg";
 import Imagen3 from "../../images/7.jpeg";
-import Siguiente from "../../images/Siguiente.png";
-import Anterior from "../../images/Anterior.png";
+import Siguiente from "../../assets/siguiente.svg";
+import Anterior from "../..//assets/anterior.svg";
 const Seccion = () => {
   const images = [Imagen1, Imagen2, Imagen3];
 
