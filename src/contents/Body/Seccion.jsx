@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import Imagen1 from "../../images/1.jpeg";
-import Imagen2 from "../../images/2.jpeg";
-import Imagen3 from "../../images/3.jpeg";
+import Imagen1 from "../../images/5.jpeg";
+import Imagen2 from "../../images/6.jpeg";
+import Imagen3 from "../../images/7.jpeg";
+import Siguiente from "../../assets/Siguiente.svg";
+import Anterior from "../../assets/Anterior.svg";
 const Seccion = () => {
   const images = [Imagen1, Imagen2, Imagen3];
 
@@ -18,15 +20,31 @@ const Seccion = () => {
   };
 
   return (
-    <div className="image-slider">
+    <div className="image-slider flex relative">
       <img
+        className="rounded-md mx-auto" // Agregado mx-auto para centrar horizontalmente
         src={images[currentImage]}
         alt={`Imagen ${currentImage + 1}`}
-        style={{ width: "auto", height: "auto" }}
+        style={{ width: "auto", height: "680px" }}
       />
 
-      <button onClick={prevImage}>Anterior</button>
-      <button onClick={nextImage}>Siguiente</button>
+      <div className="absolute left-80 top-1/2 transform -translate-y-1/2 flex items-center">
+        <button
+          onClick={prevImage}
+          className="transform transition-transform duration-300 hover:scale-125"
+        >
+          <img className="h-10 w-12" src={Anterior} alt="" />
+        </button>
+      </div>
+
+      <div className="absolute right-80 top-1/2 transform -translate-y-1/2 flex items-center">
+        <button
+          onClick={nextImage}
+          className="transform transition-transform duration-300 hover:scale-125"
+        >
+          <img className="h-10 w-12" src={Siguiente} alt="" />
+        </button>
+      </div>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import Duna from "../../images/comida.mp4";
 
 function Video() {
   return (
-    <div style={{ position: "relative" }}>
+    <div className="lg: mx-auto" style={{ position: "relative" }}>
       <video src={Duna} autoPlay loop muted></video>
       <div
         style={{

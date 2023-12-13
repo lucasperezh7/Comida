@@ -22,7 +22,7 @@ const Header = () => {
     <header
       className={`${
         scrolled
-          ? "bg-white transition-colors duration-500"
+          ? "bg-white transition-colors duration-500 opacity-60"
           : "bg-gray-950 transition-colors duration-500"
       } opacity-80 p-4 flex items-center fixed w-full top-6 z-50`}
     >
@@ -35,21 +35,21 @@ const Header = () => {
           />
         </Link>
       </div>
-      <div className="flex space-x-28 ml-2 font-semibold text-lg">
+      <div className="flex space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8 xl:space-x-28 ml-2 font-semibold text-lg">
         <Link to="/" className={scrolled ? "text-slate-800" : "text-white"}>
-          Enlace 1
+          Enlace
         </Link>
         <Link to="/" className={scrolled ? "text-slate-800" : "text-white"}>
-          Enlace 2
+          Enlace
         </Link>
         <Link to="/" className={scrolled ? "text-slate-800" : "text-white"}>
-          Enlace 3
+          Enlace
         </Link>
         <Link to="/" className={scrolled ? "text-slate-800" : "text-white"}>
-          Enlace 4
+          Enlace
         </Link>
         <Link to="/" className={scrolled ? "text-slate-800" : "text-white"}>
-          Enlace 5
+          Enlace
         </Link>
       </div>
     </header>

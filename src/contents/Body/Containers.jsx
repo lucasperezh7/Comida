@@ -12,14 +12,14 @@ const Containers = () => {
         <div>
           <div
             id="elemento1"
-            className="bg-gray-200 p-4 grid grid-cols-2 gap-4 transform hover:scale-105 transition-transform"
+            className="bg-gray-200 p-4 grid grid-cols-2 gap-4 transform hover:scale-105 transition-transform rounded-xl"
           >
             <div class="col-span-1">
               <img
                 id="imagen1"
                 src={Image1}
                 alt="Descripción de la imagen"
-                class="rounded"
+                className="rounded-xl"
               />
             </div>
             <div class="col-span-1">
@@ -33,7 +33,7 @@ const Containers = () => {
         <div>
           <div
             id="elemento2"
-            class="bg-gray-200 p-4 grid grid-cols-2 gap-4 mt-12 transform hover:scale-105 transition-transform"
+            class="bg-gray-200 p-4 grid grid-cols-2 gap-4 mt-12 transform hover:scale-105 transition-transform rounded-xl"
           >
             <div class="col-span-1">
               <h2 class="text-xl font-bold mb-2">
@@ -46,7 +46,7 @@ const Containers = () => {
                 id="imagen2"
                 src={Image2}
                 alt="Descripción de la imagen"
-                class="w-full h-auto rounded"
+                class="w-full h-auto rounded-xl"
               />
             </div>
           </div>
@@ -57,14 +57,14 @@ const Containers = () => {
         <div>
           <div
             id="elemento3"
-            className="bg-gray-200 p-4 grid grid-cols-2 gap-4 transform hover:scale-105 transition-transform"
+            className="bg-gray-200 p-4 grid grid-cols-2 gap-4 transform hover:scale-105 transition-transform rounded-xl"
           >
             <div class="col-span-1">
               <img
                 id="imagen3"
                 src={Image3}
                 alt="Descripción de la imagen"
-                class="w-full h-auto rounded"
+                class="w-full h-auto rounded-xl"
               />
             </div>
             <div class="col-span-1">
@@ -78,14 +78,14 @@ const Containers = () => {
         <div>
           <div
             id="elemento4"
-            className="bg-gray-200 p-4 grid grid-cols-2 gap-4 transform hover:scale-105 transition-transform"
+            className="bg-gray-200 p-4 grid grid-cols-2 gap-4 transform hover:scale-105 transition-transform rounded-xl"
           >
             <div class="col-span-1">
               <img
                 id="imagen4"
                 src={Image4}
                 alt="Descripción de la imagen"
-                class="w-full h-auto rounded"
+                class="w-full h-auto rounded-xl"
               />
             </div>
             <div class="col-span-1">
